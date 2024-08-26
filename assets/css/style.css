@@ -22,7 +22,6 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -125,6 +124,8 @@ h6 {
 
   #main {
     margin-left: 0;
+    background-color: #2c2f3f;
+    color: white;
   }
 }
 
@@ -142,7 +143,7 @@ h6 {
   list-style: none;
 }
 
-.nav-menu>ul>li {
+.nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
 }
@@ -168,7 +169,7 @@ h6 {
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
-.nav-menu li:hover>a {
+.nav-menu li:hover > a {
   text-decoration: none;
   color: #fff;
 }
@@ -176,7 +177,7 @@ h6 {
 .nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
-.nav-menu li:hover>a i {
+.nav-menu li:hover > a i {
   color: #149ddd;
 }
 
@@ -216,7 +217,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/background-6297148_1920.jpg") top center;
+  background: url("../img/background2.jpg") top center;
   background-size: cover;
 }
 
@@ -287,7 +288,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: #171717;
 }
 
 .section-title {
@@ -300,7 +301,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: #3e82e2;
 }
 
 .section-title h2::after {
@@ -321,10 +322,15 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+  background-color: #2f2f2f;
+  color: white;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: #1c6dde;
 }
 
 .about .content ul {
@@ -353,10 +359,12 @@ section {
   margin-bottom: 0;
 }
 
-
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
+.skills {
+  color: white;
+}
 .skills .progress {
   height: 60px;
   display: block;
@@ -371,7 +379,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: #fdfdfd;
 }
 
 .skills .progress .skill .val {
@@ -391,11 +399,12 @@ section {
   background-color: #149ddd;
 }
 
-
-
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio {
+  color: white;
+}
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -445,7 +454,7 @@ section {
   background: rgba(20, 157, 221, 0.95);
 }
 
-.portfolio .portfolio-wrap .portfolio-links a+a {
+.portfolio .portfolio-wrap .portfolio-links a + a {
   border-left: 1px solid #37b3ed;
 }
 
@@ -467,10 +476,15 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+  background-color: #2c2f3f;
 }
 
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
+  border: 1px solid black; /* Borde negro de 5px de grosor */
+  border-radius: 5px;
+  padding: 1px; /* Espacio entre la imagen y el borde */
+  background-color: black; /* Fondo negro detrás del borde */
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
@@ -478,7 +492,10 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -486,13 +503,17 @@ section {
   border: 1px solid #149ddd;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #149ddd;
 }
 
 .portfolio-details .portfolio-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+  color: white;
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -509,12 +530,13 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
 .portfolio-details .portfolio-description {
   padding-top: 30px;
+  color: white;
 }
 
 .portfolio-details .portfolio-description h2 {
@@ -527,18 +549,18 @@ section {
   padding: 0;
 }
 
-
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 20px 0;
-  background: #f9f9f9;
+  background: #2f2f2f;
 }
 
 .breadcrumbs h2 {
   font-size: 26px;
   font-weight: 300;
+  color: white;
 }
 
 .breadcrumbs ol {
@@ -550,11 +572,12 @@ section {
   font-size: 15px;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
+  color: white;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #0e2442;
